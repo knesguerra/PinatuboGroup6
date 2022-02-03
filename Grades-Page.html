@@ -1,0 +1,1288 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+ 	<title>Comsci | Grades</title>
+	<!--Meta tags-->
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!--Boxicons-->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/2a99417a45.js" crossorigin="anonymous"></script>
+	
+
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+      table { border-collapse: collapse; overflow: hidden; } 
+ input[type=checkbox] { display: none; } 
+.toggle{display:none;}
+input[type=checkbox]:checked ~ table tr.toggle { display: table-row; width: calc(100% - 20px); } 
+label { cursor: pointer; position: absolute; top: 0; left: 0; bottom: 0; width: 1000px; z-index: 2; font-size: 17px;} 
+
+
+.sidenav {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins" , sans-serif;
+}
+@media only screen and (max-width: 1440px) {
+
+ .realheader {
+  background-color:#8C9CAA ;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  margin: 0px;
+  padding-right: 100px;
+}
+  
+  .home-section{
+  left: 78px;
+}
+nav {
+display: none;
+    }
+    
+}
+  
+
+@media only screen and (max-width: 768px) {
+.realheader {
+  background-color:#8C9CAA ;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+a {font-size: 25px;}
+label { cursor: pointer; position: absolute; top: 0; left: 0; bottom: 0; width: 340px; z-index: 2; font-size: 9px;}
+toggle { font-size: 20px;}
+
+.home-section{
+  left: 78px;
+  font-size: 14px;
+}
+center {
+font-size: 14px;
+}
+
+a {font-size: 14px;}
+  h1 {
+  margin-left: 30px;
+  width: 10%;
+  font-size: 35px;
+  margin-top: 14px;
+  }
+  
+  .footer {
+  width: 381px;
+  }
+ 
+ .content {
+ height: 309px;
+ }
+ 
+ .buttons{
+ margin-top: 4px;
+}
+
+h3 {
+font-size: 30px;
+margin-left: 60px;
+font-weight: 3;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+.realheader {
+  background-color:#8C9CAA ;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  width: 100%;
+}
+   .home-section{
+  left: 78px;
+  margin-left: 90px;
+  
+}
+  h1 {
+  width: 10%;
+  margin-left: 50px;
+  }
+  
+  .footer {
+  width: 381px;
+  }
+ 
+ .content {
+ height: 309px;
+ }
+ 
+ .buttons{
+ margin-top: 4px;
+}
+
+h3 {
+font-size: 30px;
+margin-left: 60px;
+font-weight: 3;
+}
+
+ nav {
+ display: none;
+    }
+ 
+}
+
+@media only screen and (max-width: 360px) {
+.realheader {
+  background-color:#8C9CAA ;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  width: 360px;
+  margin-left: 26px;
+}
+
+  nav {display: flex; margin-left: -1px; width: 360px;}
+  
+a {font-size: 14px;}
+
+label { 
+width: 360px; 
+font-size: 9px;
+}
+
+toggle { font-size: 9px;}
+
+.home-section{
+  position: relative;
+  background-color: #d5d1ce;
+  margin-top: 20px;
+  margin-left: 25px;
+  height: 900px;
+  padding: 0px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  border-color: #000000;
+  border-style: groove;
+  border-width: 1.5px;
+   left: 0px;
+}
+
+#data {font-size: 9px;}
+
+.main-section {
+margin-left: -105px;
+}
+
+center {
+font-size: 9px;
+}
+
+  h1 {
+  margin-left: 82px;
+  width: 10%;
+  font-size: 20px;
+  margin-top: 14px;
+  }
+  
+  
+  
+  .footer-distributed {
+  margin-left: 27px;
+  }
+ 
+ .content {
+ height: 309px;
+ }
+ 
+ .buttons{
+ margin-top: 4px;
+}
+
+h3 {
+font-size: 9px;
+margin-left: 60px;
+font-weight: 3;
+}
+
+.sidenav {
+display: none;
+}
+
+th {font-size: 9px;}
+td {font-size: 9px;}
+}
+
+.home-section{
+  position: relative;
+  background-color: #d5d1ce;
+  margin-top: 20px;
+  margin-left: 25px;
+  height: 900px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  border-color: #000000;
+  border-style: groove;
+  border-width: 5px;
+   left: 0px;
+  width: 90%;
+}
+
+.home-section .text{
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+@media (max-width: 420px) {
+  .sidenav li .tooltip {
+    display: none;
+	}
+}
+
+
+
+th {
+  border: solid 1px #000;
+  padding: 2px;
+  background-color: #d5d1ce;
+  font-size: 14px;
+}
+
+td {
+  border: solid 1px #000;
+  padding: 2px;
+  font-size: 14px;
+  }
+  
+  a {
+  text-decoration: none;
+  }
+  
+  hover {
+  font-size: 9px;
+  }
+  
+  a:hover {
+  text-decoration: underline;
+  }
+  
+tr:nth-child(even) {
+  background-color: #dddddd;
+  }
+  
+  h1 {
+  text-align: center;
+  }
+  
+.realheader {
+  overflow: hidden;
+  background-color: #424F5C  ;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.realheader a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 2px;
+  
+}
+
+
+.realheader a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.realheader a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.realheader a.active {
+  background-color:#ddd ;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+.footer-distributed{
+	background: #D8D5D2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color: black;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+h4 {
+font-size: 40px;
+margin-bottom: 20px;
+}
+.footer-distributed h3 span{
+	color:  black;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	padding: 0px;
+	font-size: 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: black;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 13px;
+	font-weight: 200;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media only screen and (max-width: 768px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-size: 20px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 17px;
+	font-weight: 200;
+	margin: 0;
+}
+}
+@media only screen and (max-width: 360px){
+.footer-distributed{
+	background: #D8D5D2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 360px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 15px;
+	font-weight: 200;
+	margin: 0;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-size: 17px;
+}
+}
+
+.sidenav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #424F5C;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidenav.open{
+  width: 250px;
+}
+.sidenav .details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidenav .details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidenav .details .namelogo{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidenav.open .details .icon,
+.sidenav.open .details .namelogo{
+  opacity: 1;
+}
+.sidenav .details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidenav.open .details #btn{
+  text-align: right;
+}
+.sidenav i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidenav .navigate{
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidenav li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidenav li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidenav li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidenav.open li .tooltip{
+  display: none;
+}
+
+.sidenav li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #424F5C;
+}
+.sidenav li a:hover{
+  background: #FFF;
+}
+.sidenav li a .links{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidenav.open li a .links{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidenav li a:hover .links,
+.sidenav li a:hover i{
+  transition: all 0.5s ease;
+  color: #424F5C;
+}
+.sidenav li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.sidenav input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #8C9CAA;
+}
+.sidenav.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+
+.sidenav li.profile{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #8C9CAA;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidenav.open li.profile{
+  width: 250px;
+}
+.sidenav li .profile_details{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidenav li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidenav li.profile .name,
+.sidenav li.profile .subname{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidenav li.profile .subname{
+  font-size: 12px;
+}
+.sidenav .profile #log_out{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #8C9CAA;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidenav.open .profile #log_out{
+  width: 50px;
+  background: none;
+}
+.main-section{
+  position: relative;
+  background: white;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidenav.open ~ .main-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+data {
+font-size: 9px;
+}
+  .navbar1 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.navbar1 navbar-expand-lg navbar-light {
+margin-right: 100px;
+}
+</style>
+
+</head>
+
+<body>
+            <nav class="navbar1 navbar-expand-lg navbar-light" style="background-color:#424F5C">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard-final.html" style="color:white">Dashboard<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color:white">Site Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color:white">Calendar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="authorpage.html"  style="color:white">Authors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color:white">To-Do List</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="subjectpage.html"  style="color:white">Subject</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     
+    </form>
+  </div>
+</nav>
+	<!--navbar-->
+  <div class="sidenav">
+    <div class="details">
+      <i class='bx bxs-hot icon'></i>
+        <div class="namelogo">KHUB-CLC</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="navigate">
+	  <li>
+        <a href="subjectpage.html">
+          <i class='bx bx-book-open'></i>
+          <span class="links">Subject</span>
+        </a>
+         <span class="tooltip">Subject</span>
+      </li>
+	  <li>
+	  <hr>
+	  </li>
+      <li>
+        <a href="dashboard-final.html">
+          <i class='bx bxs-dashboard' ></i>
+          <span class="links">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-home'></i>
+         <span class="links">Site Home</span>
+       </a>
+       <span class="tooltip">Site Home</span>
+     </li>
+	 <li>
+       <a href="#">
+         <i class='bx bx-calendar' ></i>
+         <span class="links">Calendar</span>
+       </a>
+       <span class="tooltip">Calendar</span>
+     </li>
+     <li>
+       <a href="authorpage.html">
+         <i class='bx bxs-group'></i>
+         <span class="links">Authors</span>
+       </a>
+       <span class="tooltip">Authors</span>
+     </li>
+	 <li>
+       <a href="#">
+         <i class='bx bx-copy-alt'></i>
+         <span class="links">To-Do List</span>
+       </a>
+       <span class="tooltip">To-Do List</span>
+     </li>
+     <li class="profile">
+         <div class="profile_details">
+           <img src="https://media-exp1.licdn.com/dms/image/C5603AQGcKT0fUn9xdw/profile-displayphoto-shrink_200_200/0/1631627445828?e=1643846400&v=beta&t=tyH33buBp_FQmoMuyin5OxWxYNvHfSEZUMIpIt-Mxl0" alt="sir">
+           <div class="name_prof">
+             <div class="name">Jm Ibanez</div>
+             <div class="prof">CS Teacher</div>
+           </div>
+         </div>
+		 <a href="#">
+         <i class='bx bx-log-out' id="log_out" ></i>
+		 </a>
+     </li>
+    </ul>
+  </div>
+ 
+ <div class="main-section">
+   <div class="realheader">
+        <a href="#" class="logo">PSHS-CLC Knowledge Hub</a>
+        <div class="header-right">
+          <a class="active" href="#">Messages</a>
+          <a href="#">My Account</a>
+        </div>
+      </div>
+	  
+  <div class="t3xt">
+  <h1>Computer Science</h1>
+  </div>
+  
+  <input id="child1" type="checkbox">
+<input id="child2" type="checkbox">
+<input id="child3" type="checkbox">
+<input id="child4" type="checkbox">
+<table class="home-section">
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>Total Grade</th>
+                <th>Total Range</th>
+                <th>Total Percentage</th>
+             </tr>
+        </thead>
+        <tbody id="data">
+            <tr>
+                <th><label for="child1"></label><a class="hover" href="#">1st Quarter</a></th>
+                <th>1.25</th>
+				<th>0 — 214</th>
+				<th>94.04%</th>
+            </tr>
+            
+            <tr class="toggle">
+                <td></td>
+                <td>Breakdown of the total Grade of 1Q</td>
+                <td>Breakdown of the total Range of 1Q</td>
+                <td>Breakdown of the total Percentage of 1Q</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>Formative Assessments</td>
+                <td>44</td>
+                <td>0 — 48</td>
+				<td>92%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>1Q Lab Exercises</td>
+                <td>59</td>
+                <td>0 — 65</td>
+				<td>91%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>1Q Long Exam</td>
+                <td>40</td>
+                <td>0 — 45</td>
+				<td>90.4%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>1Q Project</td>
+                <td>46</td>
+                <td>0 — 50</td>
+				<td>93%</td>
+            </tr>
+            
+            <tr>
+                <th><label for="child2"></label><a class="hover" href="#">2nd Quarter</a></th>
+                <th>1.00</th>
+				<th>0 — 266</th>
+				<th>98.48%</th>
+            </tr>
+            
+             <tr class="toggle">
+                <td></td>
+                <td>Breakdown of the total Grade of 2Q</td>
+                <td>Breakdown of the total Range of 2Q</td>
+                <td>Breakdown of the total Percentage of 2Q</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>2Q Formative Assessments</td>
+                <td>48</td>
+                <td>0 — 50</td>
+				<td>96%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>2Q Lab Exercises</td>
+                <td>47</td>
+                <td>0 — 50</td>
+				<td>95%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>2Q Long Exam</td>
+                <td>48</td>
+                <td>0 — 50</td>
+				<td>96%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>2Q Project</td>
+                <td>>60</td>
+                <td>0 — 60</td>
+				<td>100%</td>
+            </tr>
+			<tr>
+                <th><label for="child3"></label><a class="hover" href="#">3rd Quarter</a></th>
+                <th>1.00</th>
+				<th>0 — 244</th>
+				<th>97.30%</th>
+            </tr>
+            
+              <tr class="toggle">
+                <td></td>
+                <td>Breakdown of the total Grade of 3Q</td>
+                <td>Breakdown of the total Range of 3Q</td>
+                <td>Breakdown of the total Percentage</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>3Q Formative Assessments</td>
+                <td>56</td>
+                <td>0 — 60</td>
+				<td>94.4%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>3Q Lab Exercises</td>
+                <td>86</td>
+                <td>0 — 90</td>
+				<td>96%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>3Q Long Exam</td>
+                <td>39</td>
+                <td>0 — 40</td>
+				<td>98%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>3Q Project</td>
+                <td>48</td>
+                <td>0 — 50</td>
+				<td>97%</td>
+            </tr>
+			<tr>
+                <th><label for="child4"></label><a class="hover" href="#">4th Quarter</a></th>
+                <th>1.00</th>
+				<th>0 — 240</th>
+				<th>97.61%</th>
+            </tr>
+            
+			  <tr class="toggle">
+                <td></td>
+                <td>Breakdown of the total Grade of 4Q</td>
+                <td>Breakdown of the total Range of 4Q</td>
+                <td>Breakdown of the total Percentage of 4Q</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>4Q Formative Assessments</td>
+                <td>47</td>
+                <td>0 — 50</td>
+				<td>94%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>4Q Lab Exercises</td>
+                <td>57</td>
+                <td>0 — 60</td>
+				<td>96%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>4Q Long Exam</td>
+                <td>50</td>
+                <td>0 — 50</td>
+				<td>100%</td>
+            </tr>
+			
+			<tr class="toggle">
+                <td>4Q Project</td>
+                <td>57</td>
+                <td>0 — 60</td>
+				<td>96%</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h4><span>PSHS — CLC &ensp;Knowledge Hub</span></h4>
+
+				<p class="footer-links">
+					<a href="dashboard-final.html" class="link-1">Dashboard</a>
+					
+					<a href="#">Site Home</a>
+				
+					<a href="#">Calendar</a>
+				
+					<a href="authorpage.html">Authors</a>
+					
+					<a href="#">To-do-list</a>
+				</p>
+
+				<p class="footer-company-name">Khub Reimagined © 2022</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<p> <a href="https://www.facebook.com/pshsclc" class="icon"><i class= 'fa fa-map-marker'></i></a>Lily Hill Street Clark Freeport Zone</p>
+				</div>
+
+				<div>
+					<p> <a href="https://www.instagram.com/pshs_clc/" class="icon"><i class= 'fa fa-phone'></i></a>(045) 499 0136</p>
+				</div>
+
+				<div>
+					<p> <a href="https://twitter.com/PSHS_CLC" class="icon"><i class= 'fa fa-envelope'></i></a>khub@clc.pshs.edu.ph</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About us</span>
+					We Are A school that stands for truth, sevice and excellence. We are PISAY.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+</div>
+
+
+	
+	  <script id="insert"></script>
+	  
+	    
+    <script>
+      const customConsole = (w) => {
+        const pushToConsole = (payload, type) => {
+          w.parent.postMessage({
+            console: {
+              payload: stringify(payload),
+              type:    type
+            }
+          }, "*")
+        }
+
+        w.onerror = (message, url, line, column) => {
+          // the line needs to correspond with the editor panel
+          // unfortunately this number needs to be altered every time this view is changed
+          line = line - 70
+          if (line < 0){
+            pushToConsole(message, "error")
+          } else {
+            pushToConsole(`[${line}:${column}] ${message}`, "error")
+          }
+        }
+
+        let console = (function(systemConsole){
+          return {
+            log: function(){
+              let args = Array.from(arguments)
+              pushToConsole(args, "log")
+              systemConsole.log.apply(this, args)
+            },
+            info: function(){
+              let args = Array.from(arguments)
+              pushToConsole(args, "info")
+              systemConsole.info.apply(this, args)
+            },
+            warn: function(){
+              let args = Array.from(arguments)
+              pushToConsole(args, "warn")
+              systemConsole.warn.apply(this, args)
+            },
+            error: function(){
+              let args = Array.from(arguments)
+              pushToConsole(args, "error")
+              systemConsole.error.apply(this, args)
+            },
+            system: function(arg){
+              pushToConsole(arg, "system")
+            },
+            clear: function(){
+              systemConsole.clear.apply(this, {})
+            },
+            time: function(){
+              let args = Array.from(arguments)
+              systemConsole.time.apply(this, args)
+            },
+            assert: function(assertion, label){
+              if (!assertion){
+                pushToConsole(label, "log")
+              }
+
+              let args = Array.from(arguments)
+              systemConsole.assert.apply(this, args)
+            }
+          }
+        }(window.console))
+
+        window.console = { ...window.console, ...console }
+
+        console.system("Running fiddle")
+      }
+
+      if (window.parent){
+        customConsole(window)
+      }
+    </script>
+  
+  <script>
+  
+   let sidenav = document.querySelector(".sidenav");
+  let closeBtn = document.querySelector("#btn");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidenav.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+  function menuBtnChange() {
+   if(sidenav.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+  <script>
+  let sidenav = document.querySelector(".sidenav");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidenav.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search icon
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidenav.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the icons class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the icons class
+   }
+  }
+  </script>
+</body>
+</html>

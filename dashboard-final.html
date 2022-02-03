@@ -1,0 +1,1474 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+ 	<title>navbar</title>
+	<!--Meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!--Boxicons-->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.footer-distributed{
+	background: #D8D5D2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color: black;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+h4 {
+font-size: 40px;
+margin-bottom: 20px;
+}
+.footer-distributed h3 span{
+	color:  black;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	padding: 0px;
+	font-size: 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: black;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 13px;
+	font-weight: 200;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media only screen and (max-width: 768px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-size: 20px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 17px;
+	font-weight: 200;
+	margin: 0;
+}
+}
+@media only screen and (max-width: 360px){
+.footer-distributed{
+	background: #D8D5D2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 360px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 15px;
+	font-weight: 200;
+	margin: 0;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-size: 17px;
+}
+}
+.sidenav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #424F5C;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidenav.open{
+  width: 250px;
+}
+.sidenav .details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidenav .details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidenav .details .namelogo{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidenav.open .details .icon,
+.sidenav.open .details .namelogo{
+  opacity: 1;
+}
+.sidenav .details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidenav.open .details #btn{
+  text-align: right;
+}
+.sidenav i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidenav .navigate{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidenav li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidenav li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidenav li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidenav.open li .tooltip{
+  display: none;
+}
+
+.sidenav li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #424F5C;
+}
+.sidenav li a:hover{
+  background: #FFF;
+}
+.sidenav li a .links{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidenav.open li a .links{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidenav li a:hover .links,
+.sidenav li a:hover i{
+  transition: all 0.5s ease;
+  color: #424F5C;
+}
+.sidenav li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.sidenav input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #8C9CAA;
+}
+.sidenav.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+.sidenav .bx-search{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #8C9CAA;
+  color: #FFF;
+}
+.sidenav.open .bx-search:hover{
+  background: #8C9CAA;
+  color: #FFF;
+}
+.sidenav .bx-search:hover{
+  background: #FFF;
+  color: #8C9CAA;
+}
+
+.sidenav li.profile{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #8C9CAA;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidenav.open li.profile{
+  width: 250px;
+}
+.sidenav li .profile_details{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidenav li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidenav li.profile .name,
+.sidenav li.profile .subname{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidenav li.profile .subname{
+  font-size: 12px;
+}
+.sidenav .profile #log_out{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #8C9CAA;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidenav.open .profile #log_out{
+  width: 50px;
+  background: none;
+}
+.header{
+  position: relative;
+  background: white;
+  min-height: 100vh;
+  top: 0;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidenav.open ~ .header{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.header .text{
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+
+@media (max-width: 360px) {
+  .sidenav li .tooltip {
+    display: none;
+	}
+}
+.realheader {
+  overflow: hidden;
+  background-color:#424F5C ;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.realheader a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 2px;
+  
+}
+
+
+.realheader a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.realheader a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.realheader a.active {
+  background-color:#ddd ;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+	footer{
+position: relative;
+bottom: 0;
+width: 100%;
+left: 0;
+background:#D8D5D2;
+margin-top: 20px;
+}
+ .content{
+max-width: 100%;
+margin: auto;
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: stretch;
+
+}
+footer .content .foot1{
+width: 33%;
+ transition: all 0.4s ease;
+ float: left;
+}
+footer .content .foot2{
+width:33%;
+transition: all 0.4s ease;
+float: left;
+}
+footer .content .foot3{
+width:33%;
+transition: all 0.4s ease;
+float: left;
+padding-left: 100px;
+}
+.row1{
+margin-bottom: 10px;
+font-size: 30px;
+}
+.row2{
+margin-left: 100px;
+}
+.footheader{
+margin-bottom: 30px;
+float: left;
+}
+
+
+.fa{
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 8px;
+  border-radius: 50%;
+  }
+.fa-facebook{
+background: #3B5998;
+  color: white;
+  }
+.fa-instagram{
+background: #125688;
+  color: white;
+}
+.fa-twitter{
+background: #55ACEE;
+  color: white;
+}
+footer i:hover{
+opacity: 0.7;
+}
+li{
+padding-top: 10px;
+}
+.buttons{
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  background-color: #7C8981;
+  border: none;
+  border-radius: 15px;
+   box-shadow: 0 9px #999;
+}
+.fake{
+font-size: 25px;
+}
+header {
+            height:70px;
+            background-color: #424F5C;
+        }
+        
+        .row {
+            background-color: #D8D5D2;
+            margin-left: 15px; 
+            margin-right: 15px;
+            padding-bottom: 15px;  
+            
+        }
+        
+        .content1 {
+            margin: 15px;
+        }
+    
+        
+        .student {
+            background-color: #7C8981;
+            margin:20px;
+            padding-bottom:15px;  
+             border-radius: 25px;
+        border: 2px solid #7C8981;
+        }
+        
+        .studentpic {
+            width:10vw;
+            margin-left: 15px;
+            margin-top:15px;
+        }
+        .name  {
+            font-size:2vw;
+           display:inline-block;
+            color:white;
+            margin-left: 10px;
+            margin-top:10px;
+            
+            
+        }
+       
+       
+        
+        .announcements {
+            background-color: #8C9CAA;
+            border-radius: 25px;
+        border: 2px solid #8C9CAA;
+            margin:20px;
+            padding-bottom:15px;  
+            font-size:1.5vw;
+            color:white;
+            padding:15px;
+        }
+     
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+      
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+    
+    section .book {
+        position: relative;
+        width:400px;
+        height:440px;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+    
+    section .book:hover {
+        transform: rotateY(35deg);
+        box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
+    }
+    
+    section .book:active {
+        transform: rotateY(180deg);
+    
+    }
+
+    section .book:before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        transform-origin: left;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+        transform: rotateY(90deg);
+          
+    }
+      
+    section .book img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .subject {
+        margin-top: 15px;
+    }
+    
+     .vertical {
+            border-left: 2px solid #424F5C;
+            height: 475px;
+            position:absolute;
+            left: 50%;
+        }
+        
+   .texts1 {
+        margin-top: 100px;
+        text-align: center;
+         border-radius: 25px;
+        border: 2px solid #424F5C;
+        background-color: #424F5C;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .texts2 {
+        text-align: center;
+        text-shadow: 2px 2px white;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .texts3 {
+        text-align: center;
+       
+    }
+    
+   .navbar1 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+    
+  @media only screen and (max-width: 1440px) {
+       section .book {
+        position: relative;
+        width:400px;
+        height:440px;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+     .announcements h1 {
+            font-size:1.75vw;
+         }
+     .stars {
+        width: 200px;
+        height: 50px;
+        object-fit: none;
+        margin-right: auto;
+        margin-left: auto;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    
+    .header {
+        left: 78px;
+        width: calc(100% - 78px);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+      section .book {
+        position: relative;
+        margin-top: 50px;
+        height: 200px;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+        transform-style: preserve-3d;
+        transition: 0.5s;
+      }
+         .announcements h1 {
+            font-size:1.75vw;
+         }
+    .stars { 
+        object-position: 20% ;
+        width: 100px;
+        object-fit: cover;
+        margin-right: auto;
+        margin-left: auto;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        display: block;
+    }
+    
+    .texts1 {
+        margin-top: 100px;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #424F5C;
+        background-color: #424F5C;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size:24px;
+    }
+    .texts2 {
+        text-align: center;
+        text-shadow: 2px 2px white;
+        font-size: 20px;
+    }
+    
+    .texts3 {
+        text-align: center;
+       
+    }
+    
+    #homeroom {
+       font-size:2.8vw;
+    }
+    
+    #math {
+        font-size:2.3vw;
+    }
+    #chem {
+        font-size:2.8vw;
+    }
+    nav {
+        display: none;
+    }
+    .header {
+        left: 78px;
+        width: calc(100% - 78px);
+    }
+
+  }
+  
+  @media (max-width: 360px) {
+        section .book {
+        position: relative;
+        width: 200px;
+        height: 320px;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+    .vertical {
+        display: none;
+    }
+    
+    hr {
+        display: none;
+    }
+    .texts1 {
+        margin-top: 15px;
+        text-align: center;
+         border-radius: 25px;
+        border: 2px solid #424F5C;
+        background-color: #424F5C;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+    #homeroom {
+        font-size: 32px;
+    }
+     
+    #math {
+        font-size:32px;
+       
+    }
+
+    #chem {
+        font-size:32px;
+    }
+    
+    .sidenav {
+        display: none;
+    }
+    .navbar1 {
+        display: block;
+    }
+         nav li a {
+                display:block;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 20px;
+                width: 210px;
+            }
+            
+           nav li:hover {
+               text-decoration: underline;
+           }
+           
+    .header{
+  left: 0px;
+  width: 100%;
+
+}
+.studentpic {
+            width:30%;
+            margin-left: 15px;
+            margin-top:15px;
+        }
+        .name  {
+            font-size: 4vw;
+           display:inline-block;
+            color:white;
+            margin-left: 10px;
+            margin-top:10px;
+            
+            
+        }
+       
+       
+        
+        .announcements {
+            background-color: #8C9CAA;
+            border-radius: 25px;
+        border: 2px solid #8C9CAA;
+            margin:20px;
+            padding-bottom:15px;  
+            font-size:4vw;
+            color:white;
+            padding:15px;
+        }
+        
+        .announcements h1 {
+            font-size:4vw;
+}
+}
+</style>
+   </head>
+   
+   <body>
+        <nav class="navbar1 navbar-expand-lg navbar-light" style="background-color:#424F5C">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard-final.html" style="color:white">Dashboard<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color:white">Site Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color:white">Calendar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="authorpage.html"  style="color:white">Authors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color:white">To-Do List</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     
+    </form>
+  </div>
+</nav>
+
+  <div class="sidenav">
+    <div class="details">
+      <i class='bx bxs-hot icon'></i>
+        <div class="namelogo">KHUB-CLC</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="navigate">
+	<li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="dashboard-final.html">
+          <i class='bx bxs-dashboard' ></i>
+          <span class="links">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-home'></i>
+         <span class="links">Site Home</span>
+       </a>
+       <span class="tooltip">Site Home</span>
+     </li>
+	 <li>
+       <a href="#">
+         <i class='bx bx-calendar' ></i>
+         <span class="links">Calendar</span>
+       </a>
+       <span class="tooltip">Calendar</span>
+     </li>
+     <li>
+       <a href="authorpage.html">
+         <i class='bx bxs-group'></i>
+         <span class="links">Authors</span>
+       </a>
+       <span class="tooltip">Authors</span>
+     </li>
+	 <li>
+       <a href="#">
+         <i class='bx bx-copy-alt'></i>
+         <span class="links">To-Do List</span>
+       </a>
+       <span class="tooltip">To-Do List</span>
+     </li>
+     <li class="profile">
+         <div class="profile_details">
+           <img src="https://media-exp1.licdn.com/dms/image/C5603AQGcKT0fUn9xdw/profile-displayphoto-shrink_200_200/0/1631627445828?e=1643846400&v=beta&t=tyH33buBp_FQmoMuyin5OxWxYNvHfSEZUMIpIt-Mxl0" alt="sir">
+           <div class="name_prof">
+             <div class="name">Jm Ibanez</div>
+             <div class="prof">CS Teacher</div>
+           </div>
+         </div>
+		 <a href="#">
+         <i class='bx bx-log-out' id="log_out" ></i>
+		 </a>
+     </li>
+    </ul>
+  </div>
+  <div class="header1 header">
+       <div class="realheader">
+        <a href="#" class="logo">PSHS-CLC Knowledge Hub</a>
+        <div class="header-right">
+          <a class="active" href="#">Messages</a>
+          <a href="#">My Account</a>
+        </div>
+      </div>
+  
+  
+  <div class="row content1">
+      
+      <div class="col-sm-6">
+          <div class="student">
+          <img class="studentpic" src="https://64.media.tumblr.com/fa4b4272a5594388ba203977f436cc64/003162e5d44a3a86-42/s540x810/ce5beb498f0339a41e637b4692a58c6d51624a83.png" alt="student">
+          <h1 class="name">Felix Batumbakal
+        <br>   9 - Pinatubo</h1> 
+       
+</div>
+      </div>
+      <div class="col-sm-6">
+          <div class="announcements">
+          <h1>Announcements:</h1>
+          <p>-Academic break for students starts on February 3 <br> -Classes resume on February 28 <br> -Periodic Exams moved to February 30, 2023 </p>
+          </div>
+      </div>
+  </div>
+  
+  <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/6Na4KfAD877sFu16b--EpGeVT9RQSbJlgvPzyS0os8qcC9m3_s9ncJNVeLVN73UwZTI5jZm39RDcsBYJczDiHAW1od2P2OQN6JTfHHdOeB03KCHOB2NceNAWkj1s_G3zyCTzXqZveyw=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3" id="subjects">
+          <div  style="color:#424F5C">
+          <a href="Biology.html"><p class="texts1">Biology</p></a>
+         <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155120-200.png" alt="star" class="stars">
+          <p class="texts3">80% Complete</p>
+     </div>
+      </div>
+      <div class ="vertical"></div>
+      <div class="col-sm-3">
+     
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/Lc9ZrNhDrYReNEUlBFLCphORwBUVqdvKMkCgk7i-K6DoK5pfAUbxMy3dcfntfG9XsZYelFOFraEfTpyLLhe4m7ObGlfmCLe6B1vzESef1jwK8hJMrAewfD2gNztwbN4u64N4qT6rYzk=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C;">
+          <a href="Chemistry.html"><p class="texts1" id="chem">Chemistry</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155121-200.png" alt="star" class="stars">
+          <p class="texts3">90% Complete</p>
+      </div>
+      </div>
+  
+  </div>
+  <hr style="height:2px;border-width:0;background-color:#424F5C; margin:0px; color:#424F5C; margin-left:15px; margin-right:15px;">
+   <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/1_3sfdcnKWO_YOVnsmXhqlHSBG8gVDhwtPyhAk9eij7kFXHJCRoLu-t7y_u-KHDEEorKlOqida9f_7gq_9qMj7DjOw900WODkljnohi1_BFG8fSMgN3wvzQCsRnEWLFO5Ak7nJqWhfk=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+       
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="subjectpage.html"><p class="texts1">Computer Science</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155121-200.png" alt="star" class="stars">
+          <p class="texts3">95% Complete</p>
+
+      </div>
+      </div>
+       <div class ="vertical"></div>
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/qqx_cejINPTNsZYsUwYwxYmjWUObImVoDd3CW4Lx39Tz-OROFL4C_pwzn-XKZ4qfOHbXiUwFrOuGkoxS1SIBSKhLd1MK8c3PLKSU3rVRFMoIFfp8h0a6sFm8CV6hojSTISWgNPOhzfg=w2400" alt="cover">
+        </div>
+    </section>
+       </div> 
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="English.html"><p class="texts1">English</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155118-200.png" alt="star" class="stars">
+          <p class="texts3">85% Complete</p>
+      </div>
+      </div>
+  </div>
+  <hr style="height:2px;border-width:0;background-color:#424F5C; margin:0px; color:#424F5C; margin-left:15px; margin-right:15px;">
+  <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/Y496SyZXCt9nM-WbA3s15i0SLAyYF3x9yU0dkdNj_g04lUGzZu59SQDvCG1yDi3XNF476gYgYnabzaaZoMn6mv8VCtPJtbBNn_xPe-HngEdXNM7wCGcbyHLn3YRJrVifGktPquLj14k=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="Filipino.html"><p class="texts1">Filipino</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155117-200.png" alt="star" class="stars">
+          <p class="texts3">60% Complete</p>
+      </div>
+      </div>
+       <div class ="vertical"></div>
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/N8Xu6plqMmJ3CkpZzdss0S-t4GFEdotHOkcsmwikVgOWtcP_j3arVU-SVklGkUUjqgm6bbJaB54Dm1sXyAu6jPV3qiAAUoIdBsBZNSohQaJ4q98gl4PvkLtFOW3CxRpABlwpXGggRus=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="Health.html"><p class="texts1">Health</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155119-200.png" alt="star" class="stars">
+          <p class="texts3">100% Complete</p>
+      </div>
+      </div>
+  </div>
+  <hr style="height:2px;border-width:0;background-color:#424F5C; margin:0px; color:#424F5C; margin-left:15px; margin-right:15px;">
+  <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/XTL_1RiyvvpZLxYrLft8TYBQRwTPixMwU4337e7rawbpR4StUKJgYTxNMuzGnrL7euh0dso9ehyyEeofCGCPD3u-oXMAg9HAAAy-Q4BYOne5TsTgNyRGRlUOplyqQCXWiZ9FxuvEbg8=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="Homeroom.html"><p class="texts1" id="homeroom">Homeroom</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155115-200.png" alt="star" class="stars">
+          <p class="texts3">30% Complete</p>
+      </div>
+      </div>
+       <div class ="vertical"></div>
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/Cq2TNjshOojT6561DT1GGlKXd4oVzawNDwZtHohbGiGhGN45mDwrSR-9Xt5mINx9-v8wtjgHeHhVKp6XHsWh8VQDIGoTqs5pLKFSRtVaqdDP9fSS9T2wLiNOS5JoH0zTl60BCFTq1X0=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="math.html"><p class="texts1" id="math">Mathematics</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155120-200.png" alt="star" class="stars">
+          <p class="texts3">80% Complete</p>
+      </div>
+      </div>
+  </div>
+  <hr style="height:2px;border-width:0;background-color:#424F5C; margin:0px; color:#424F5C; margin-left:15px; margin-right:15px;">
+  <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/qCgz2sfyR60Imvq7gzSgkkQyxHGjq4HZE-GH8z8LmnFmQbTCVZ_JkfG-Q2qasL7xBEXCDWr6x_H3pOa3iVVrWud5KmEzGzRkwaakA7ch_8EeJ0eO0qGsXD1Dpmnb4FkAGbx_0dB9-KA=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="music.html"><p class="texts1">Music</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155119-200.png" alt="star" class="stars">
+          <p class="texts3">100% Complete</p>
+      </div>
+      </div>
+       <div class ="vertical"></div>
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/2axt5mee1SVwqCulN7aTOhTwWpmSPY8Y7XocdHbcljhr82jCnBr2gIfhafNbKcF-vT69x7HXpcsF58eSMmWxGu1gI-oCD5VXoFK0Woi5422qZ-gjJ6up2rZ0KZrGRsSMIf_85UoU0po=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="pe.html"><p class="texts1">Physical Education</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155119-200.png" alt="star" class="stars">
+          <p class="texts3">100% Complete</p>
+      </div>
+      </div>
+  </div>
+  <hr style="height:2px;border-width:0;background-color:#424F5C; margin:0px; color:#424F5C; margin-left:15px; margin-right:15px;">
+  <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/rsF3GG8bK8U4GGHKupiqY9kiu_Y7iIjB8pKUewGB-ImctzZDwbG-INXZXcaLR_B16tJEyMgAjf_CM_gfa4rQv5wN7TMAPGEwWve--QSfL3Is036Ng6CDbinlXRZc1UzclpOmb4dvA1M=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="PHYSICS.html"><p class="texts1">Physics</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155115-200.png" alt="star" class="stars">
+          <p class="texts3">30% Complete</p>
+      </div>
+      </div>
+       <div class ="vertical"></div>
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/Gma5h09W251pAnA6g4yQve3y3jvkbZoKoFsAQGbnclQsaXYjzskyiGIxROnLJJpMFZEnhM4RWCwfnKGCbM22YT_Ms_QKbF0OB9O7jakBkdl5rRIrTf1IV72fI6nREfi6_xAc_byrzo8=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div class="texts" style="color:#424F5C">
+          <a href="socsci.html"><p class="texts1" style="padding-left:10px; padding-right:10px;">Social Science</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155121-200.png" alt="star" class="stars">
+          <p class="texts3">90% Complete</p>
+      </div>
+      </div>
+  </div>
+  <hr style="height:2px;border-width:0;background-color:#424F5C; margin:0px; color:#424F5C; margin-left:15px; margin-right:15px;">
+  <div class="row">
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/lmksSfMmZsHB8lpPkKYb0MxfprLzMO-hWrLX9nD66ki1KyuAdzgdRaaru4vYt2sXaiE5iuKT43o-3Fwj84nFiTnscsgsI-qU9EOZvER1hBZzNt8cN605ToBXbUc36I8ZSCJbgSoeSqM=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="stat.html"><p class="texts1">Statistics</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155118-200.png" alt="star" class="stars">
+          <p class="texts3">70% Complete</p>
+      </div>
+      </div>
+       <div class ="vertical"></div>
+      <div class="col-sm-3">
+      
+      <section class="subject">
+        <div class="book">
+            <img src="https://lh3.googleusercontent.com/xCF_rv7OEzw1B2WUCQQQiATnE2boPGjSIFNbreRgZyuFjQ-jlP6H_OFleu2ab5ZgDcroIldNt-N4v-6BUDsSSAJjWoZXAAZeFFxDjaNOYgEwx-RTUTQ4nmYuF-a7jaQPSq6WqyCEC2o=w2400" alt="cover">
+        </div>
+    </section>
+       </div>
+      <div class="col-sm-3">
+          <div style="color:#424F5C">
+          <a href="valed.html"><p class="texts1">Values Education</p></a>
+          <p class="texts2">Progress:</p>
+          <img src="https://static.thenounproject.com/png/2155119-200.png" alt="star" class="stars">
+          <p class="texts3">100% Complete</p>
+      </div>
+      </div>
+  </div>
+  <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h4><span>PSHS — CLC &ensp;Knowledge Hub</span></h4>
+
+				<p class="footer-links">
+					<a href="dashboard-final.html" class="link-1">Dashboard</a>
+					
+					<a href="#">Site Home</a>
+				
+					<a href="#">Calendar</a>
+				
+					<a href="authorpage.html">Authors</a>
+					
+					<a href="#">To-do-list</a>
+				</p>
+
+				<p class="footer-company-name">Khub Reimagined © 2022</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<p> <a href="https://www.facebook.com/pshsclc" class="icon"><i class= 'fa fa-map-marker'></i></a>Lily Hill Street Clark Freeport Zone</p>
+				</div>
+
+				<div>
+					<p> <a href="https://www.instagram.com/pshs_clc/" class="icon"><i class= 'fa fa-phone'></i></a>(045) 499 0136</p>
+				</div>
+
+				<div>
+					<p> <a href="https://twitter.com/PSHS_CLC" class="icon"><i class= 'fa fa-envelope'></i></a>khub@clc.pshs.edu.ph</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About us</span>
+					We Are A school that stands for truth, sevice and excellence. We are PISAY.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+  
+
+
+  
+
+    </div>
+  <script>
+  let sidenav = document.querySelector(".sidenav");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidenav.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search icon
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidenav.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the icons class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the icons class
+   }
+  }
+   $(".book").mouseenter(function(){
+  $(this).parent(".book-wrap").addClass("rotate");
+});
+
+$(".book").mouseleave(function(){
+  $(this).parent(".book-wrap").removeClass("rotate");
+});
+
+$(".book").click(function(){
+  $(this).parent(".book-wrap").addClass("flip");
+});
+
+$(".book-back").click(function(){
+  $(this).parent(".book-wrap").removeClass("flip");
+});
+  
+  </script>
+      </body>
+       
+
+</html>
+
+
+
+

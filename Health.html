@@ -1,0 +1,1393 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+ 	<title>Health 3</title>
+	<!--Meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--fontawesome-->
+	<script src="https://kit.fontawesome.com/2a99417a45.js" crossorigin="anonymous"></script>
+	<!--Boxicons-->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.footer-distributed{
+	background: #D8D5D2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color: black;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-left h4 {
+font-size: 25px;
+margin-bottom: 20px;
+}
+.footer-distributed h3 span{
+	color:  black;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	padding: 0px;
+	font-size: 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: black;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 13px;
+	font-weight: 200;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.sidenav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #424F5C;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidenav.open{
+  width: 250px;
+}
+.sidenav .details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidenav .details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidenav .details .namelogo{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidenav.open .details .icon,
+.sidenav.open .details .namelogo{
+  opacity: 1;
+}
+.sidenav .details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidenav.open .details #btn{
+  text-align: right;
+}
+.sidenav i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidenav .navigate{
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidenav li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidenav li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidenav li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidenav.open li .tooltip{
+  display: none;
+}
+
+.sidenav li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #424F5C;
+}
+.sidenav li a:hover{
+  background: #FFF;
+}
+.sidenav li a .links{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidenav.open li a .links{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidenav li a:hover .links,
+.sidenav li a:hover i{
+  transition: all 0.5s ease;
+  color: #424F5C;
+}
+.sidenav li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.sidenav input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #8C9CAA;
+}
+.sidenav.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+
+.sidenav li.profile{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #8C9CAA;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidenav.open li.profile{
+  width: 250px;
+}
+.sidenav li .profile_details{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidenav li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidenav li.profile .name,
+.sidenav li.profile .subname{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidenav li.profile .subname{
+  font-size: 12px;
+}
+.sidenav .profile #log_out{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #8C9CAA;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidenav.open .profile #log_out{
+  width: 50px;
+  background: none;
+}
+.main-section{
+  position: relative;
+  background: white;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidenav.open ~ .main-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+
+.announcement {
+	background: #efece7;
+	height: 220px;
+	width: 600px;
+	padding-top: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	border-left: 6px solid #7C8981;
+}
+
+.main-section .announcement i {
+	padding-left: 20px;
+}
+
+.anntip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.anntip .anntiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #424F5C;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  top: -15px;
+  left: 110%;
+}
+
+.anntip .anntiptext:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:transparent black transparent transparent;
+}
+
+.anntip:hover .anntiptext {
+  visibility: visible;
+}
+
+.main-section .announcement .gmeet  {
+	padding-top: 15px;
+}
+
+.main-section .announcement .gmeet .gmeetext {
+	position: absolute;
+	padding-left: 5px;
+	text-decoration: none;
+	color: CadetBlue;
+}
+
+.main-section .announcement  {
+	padding-left: 25px;
+}
+
+.main-section .announcement ul li {
+	margin-left: 25px;
+}
+.main-section h3{
+	margin-left: 20px;
+	font-size: 25px;
+}
+.container {
+		width: 400px;
+		height: 500px;
+		position: relative;
+		top: 280px;
+		left: 50%;
+		transform: translate(-20%, -50%);
+		transform-style: preserve-3d;
+		perspective: 1100px;
+		margin-bottom: 25px;
+	}
+	
+	.container .page {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		box-shadow: 0 0 10px 0 #333;
+		background: #efece7;
+		position: absolute;
+		top: 0;
+		transform-style: preserve-3d;
+		transition: 3s;
+		transform-origin: left;
+		border-left: 0.5px solid #333;
+	}
+	
+	.container .page .side {
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		text-align: center;
+	}
+	
+	.container .page .side-2 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+	}
+	
+	.container .page .side-4 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+	}
+	
+	.container .page .side-6 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+	}
+	
+	.container .page .side-8 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+	}
+	
+	.container .page .side-10 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+	}
+	
+	.container .page .side-12 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+	}
+	
+	.container .page .side-14 {
+		position: absolute;
+		top: 0;
+		transform: rotateY(-180deg);
+		backface-visibility: hidden;
+		background: url("https://lh3.googleusercontent.com/Wcft3Z9TsTsgHPC8rV2iOPEgfEmvAi4mZPI8Akgjj_E83Zcnl2_ZtwYyGD6hB0IgH5p4mv53E4ixN1ONV8-Ihj0GmbVnFoIeDHen3k350V7BQv4yqj6H5Gtjd3Lf4eZ-rWrZWMAk8QM=w2400") no-repeat center /cover;
+	} 
+	
+	p {
+		text-align: justify;
+		padding: 30px;
+	}
+	
+	.container #page-1 {
+		z-index: 8;
+		background: url("https://lh3.googleusercontent.com/Wcft3Z9TsTsgHPC8rV2iOPEgfEmvAi4mZPI8Akgjj_E83Zcnl2_ZtwYyGD6hB0IgH5p4mv53E4ixN1ONV8-Ihj0GmbVnFoIeDHen3k350V7BQv4yqj6H5Gtjd3Lf4eZ-rWrZWMAk8QM=w2400") no-repeat center /cover;
+	}
+	
+	.container #page-2 {
+		z-index: 7;
+	}
+
+	.container #page-3 {
+		z-index: 6;
+	}
+
+	.container #page-4 {
+		z-index: 5;
+	}
+	
+	.container #page-5 {
+		z-index: 4;
+	}
+	
+	.container #page-6 {
+		z-index: 3;
+	}
+
+	.container #page-7 {
+		z-index: 2;
+	}
+	
+	.container #page-8 {
+		z-index: 1;
+	}
+
+	#page-1.active {
+		transform: rotateY(-180deg);
+	}
+	
+	#page-2.active {
+		transform: rotateY(-179.9deg);
+	}
+	
+	#page-3.active {
+		transform: rotateY(-179.8deg);
+	}
+	
+	#page-4.active {
+		transform: rotateY(-179.7deg);
+	}
+	
+	#page-5.active {
+		transform: rotateY(-179.6deg);
+	}
+	#page-6.active {
+		transform: rotateY(-179.5deg);
+	}
+	
+	#page-7.active {
+		transform: rotateY(-179.4deg);
+	}
+	
+	#page-8.active {
+		transform: rotateY(-179.3deg);
+	}
+
+	h3 {
+		padding-top: 30px;
+	}
+	
+	.container a {
+		background: #ffffff;
+		border: solid 1px #e6e6e6;
+		border-radius: 2px;
+		display: inline-block;
+		height: 100px;
+		line-height: 100px;
+		margin: 5px;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		width: 100px;
+
+}
+
+	.container a span {
+		background: #f2594b;
+		border-radius: 4px;
+		color: #ffffff;
+		display: inline-block;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: normal;
+		padding: 5px 10px;
+		position: relative;
+		text-transform: uppercase;
+		z-index: 1;
+}
+
+.container a span:last-child {
+		margin-left: -20px;
+}
+
+.container a:before,
+.container a:after {
+		background: #ffffff;
+		border: solid 3px #9fb4cc;
+		border-radius: 4px;
+		content: '';
+		display: block;
+		height: 35px;
+		left: 50%;
+		margin: -17px 0 0 -12px;
+		position: absolute;
+		top: 50%;
+		
+		
+		width: 25px;
+}
+
+.container a:hover:before,
+.container a:hover:after {
+		background: #e2e8f0;
+}
+
+
+.container a:before {
+		margin: -23px 0 0 -5px;
+}
+
+.container a:hover {
+		background: #e2e8f0;
+		border-color: #9fb4cc;
+}
+
+.container a:active {
+		background: #dae0e8;
+		box-shadow: inset 0 2px 2px rgba(0, 0, 0, .25);
+}
+
+.container a span:first-child {
+		display: none;
+}
+
+.container a:hover span:first-child {
+		display: inline-block;
+}
+
+.container a:hover span:last-child {
+		display: none;
+}
+
+.main-section .outputs {
+	margin: 15px 20px 20px 30px;
+}
+
+.main-section .outputs .output-1,
+.main-section .outputs .output-2,
+.main-section .outputs .output-3,
+.main-section .outputs .output-4,
+.main-section .outputs .output-5 {
+	padding: 5px;
+}
+
+.main-section .outputs .output-1 i,
+.main-section .outputs .output-2 i {
+	color: white;
+	background-color: DodgerBlue;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	padding: 5px;
+}
+
+.main-section .outputs .output-3 i,
+.main-section .outputs .output-4 i,
+.main-section .outputs .output-5 i {
+	color: white;
+	background-color: MediumOrchid;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	padding: 5px;
+}
+
+
+.main-section .outputs .out-text {
+	position: absolute;
+	padding-left: 7px;
+	text-decoration: none;
+	color: CadetBlue;
+}
+
+.realheader {
+  overflow: hidden;
+  background-color:#424F5C ;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.realheader a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 2px;
+  
+}
+
+
+.realheader a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.realheader a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.realheader a.active {
+  background-color:#ddd ;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+.navbar1 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.container .vids {
+	width: 340px; 
+	height: 300px; 
+	padding-top: 60px; 
+	border: none;
+}
+
+@media only screen and (max-width: 1440px) {
+	nav {
+	display: none;
+	}
+	
+	.container {
+	margin-left: -50px;
+	perspective: 2000px;
+	}
+	
+	.announcement h4 {
+		font-size: 15px;
+		padding-bottom: 0;
+		margin-bottom: -7px;
+	}
+	
+	.main-section .announcement ul li {
+	margin-left: 25px;
+	padding-top: 15px;
+	margin-top: -17px;
+}
+}
+@media only screen and (max-width: 768px) {
+	.sidenav.open {
+		width: 250px;
+	}
+	 .announcement {
+		 width: 400px;
+		 height: 250px;
+	 }
+
+	 .container {
+		 width: 170px;
+		 height: 480px;
+		 margin-left: 45px;
+		 perspective: 2200px;
+	 }
+	 
+	 .container h3 {
+		 font-size: 18px;
+	 }
+	 
+	 .container .side {
+		 overflow: hidden;
+		text-overflow: ellipsis;
+	 }
+	 
+	 .container a {
+		 width: 80px;
+		 margin-left: 10px;
+		 height: 80px;
+	 } 
+	 
+	 .container .vids {
+	 width: 250px;
+	 height: 350px;
+	 }
+	 
+	 	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-size: 20px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 17px;
+	font-weight: 200;
+	margin: 0;
+}	 
+}
+
+@media only screen and (max-width: 1024px) {
+	.sidenav.open {
+		width: 250px;
+	}
+	.container {
+		width: 350px;
+		margin-left: 40px;
+		margin-right: 5px;
+		perspective: 2000px;
+	}
+	nav {
+	display: none;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+
+.main-section {
+  left: 0px;
+  width: 100%;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+ .sidenav {
+        display: none;
+    }
+	
+    .navbar1 {
+        display: block;
+    }
+         nav li a {
+                display:block;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 20px;
+                width: 210px;
+            }
+			
+            
+           nav li:hover {
+               text-decoration: underline;
+           }
+	
+	.announcement {
+	margin-left: 10px;
+		width: 250px;
+		height: 310px;
+	}
+	.container {
+		top: 120px;
+		 width: 150px;
+		 height: 200px;
+		 perspective: 2000px;
+	 }
+	 
+	 .container p {
+		 display: none;
+	 }
+	 
+	 .container h3 {
+		 font-size: 15px;
+	 }
+	 
+	.main-section .outputs .output-1,
+	.main-section .outputs .output-2,
+	.main-section .outputs .output-3,
+	.main-section .outputs .output-4,
+	.main-section .outputs .output-5 {
+	padding: 20px;
+}
+
+.main-section .announcement .gmeet .gmeetext {
+	padding-left: 5px;
+}
+
+.container .vids {
+	width: 80px;
+	height: 80px;
+	padding-top: 5px;
+	
+}
+
+.footer-distributed{
+	background: #D8D5D2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 360px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  black;
+	font-size: 15px;
+	font-weight: 200;
+	margin: 0;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-size: 17px;
+}
+
+.anntip .anntiptext {
+font-size: 12px;
+  visibility: hidden;
+  width: 130px;
+  background-color: #424F5C;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  left: 110%;
+}
+}
+</style>
+
+</head>
+
+<body>
+<nav class="navbar1 navbar-expand-lg navbar-light" style="background-color:#424F5C">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard-final.html" style="color: white;">Dashboard<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Site Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Calendar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="authorpage.html" style="color: white;">Authors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">To-Do List</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="quizpage.html" style="color: white;">Quiz Page</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="Grades-Page.html" style="color: white;">Grades</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<!--navbar-->
+  <div class="sidenav">
+    <div class="details">
+      <i class='bx bxs-hot icon'></i>
+        <div class="namelogo">KHUB-CLC</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="navigate">
+	  <li>
+        <a href="quizpage.html">
+          <i class='bx bx-pen'></i>
+          <span class="links">Quiz Page</span>
+        </a>
+         <span class="tooltip">Quiz Page</span>
+      </li>
+	  <li>
+        <a href="Grades-Page.html">
+          <i class='bx bx-book-open'></i>
+          <span class="links">Grades</span>
+        </a>
+         <span class="tooltip">Grades</span>
+      </li>
+	  <li>
+	  <hr>
+	  </li>
+      <li>
+        <a href="dashboard-final.html">
+          <i class='bx bxs-dashboard' ></i>
+          <span class="links">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-home'></i>
+         <span class="links">Site Home</span>
+       </a>
+       <span class="tooltip">Site Home</span>
+     </li>
+	 <li>
+       <a href="#">
+         <i class='bx bx-calendar' ></i>
+         <span class="links">Calendar</span>
+       </a>
+       <span class="tooltip">Calendar</span>
+     </li>
+     <li>
+       <a href="authorpage.html">
+         <i class='bx bxs-group'></i>
+         <span class="links">Authors</span>
+       </a>
+       <span class="tooltip">Authors</span>
+     </li>
+	 <li>
+       <a href="#">
+         <i class='bx bx-copy-alt'></i>
+         <span class="links">To-Do List</span>
+       </a>
+       <span class="tooltip">To-Do List</span>
+     </li>
+     <li class="profile">
+         <div class="profile_details">
+           <img src="https://media-exp1.licdn.com/dms/image/C5603AQGcKT0fUn9xdw/profile-displayphoto-shrink_200_200/0/1631627445828?e=1643846400&v=beta&t=tyH33buBp_FQmoMuyin5OxWxYNvHfSEZUMIpIt-Mxl0" alt="sir">
+           <div class="name_prof">
+             <div class="name">Jm Ibanez</div>
+             <div class="prof">CS Teacher</div>
+           </div>
+         </div>
+		 <a href="#">
+         <i class='bx bx-log-out' id="log_out" ></i>
+		 </a>
+     </li>
+    </ul>
+  </div>
+  
+	<div class="main-section">
+		<!--Header-->
+		<div class="realheader">
+        <a href="#" class="logo">PSHS-CLC Knowledge Hub</a>
+        <div class="header-right">
+          <a class="active" href="#">Messages</a>
+          <a href="#">My Account</a>
+        </div>
+      </div>
+		<!--subject-->
+		
+		<!--top part-->
+		<div class="announcement">
+			<i class="fas fa-user-circle"></i>
+			<div class="anntip">Announcements
+				<span class="anntiptext">No announcements have been posted yet</span>
+			</div>
+			<div class="gmeet">
+				<i class="fas fa-external-link-alt"></i>
+				<a href="https://meet.google.com/frd-siao-vcr"><span class="gmeetext">Google Meet link</span></a>
+			</div>
+			<h4>Synchronous Schedule</h4>
+			<ul>
+				<li>Fridays (3 meets) at 7:40am - 8:30am via Google Meet</li>
+			</ul>
+			<h4>Asynchronous Schedule</h4>
+			<ul>
+				<li>Fridays at 7:40am - 8:30am</li>
+				<li>Fridays at 7:40am - 8:30am</li>
+			</ul>
+		</div>
+			<h3>PDF & RECORDINGS</h3>
+			<hr style="width: 100%; border-top: 3px dashed #bbb; margin: 10px;">
+		<!--flipbook-->
+		<div class="container">
+		<div id="page-1" class="page" onclick="rotate1()">
+		
+		</div>			
+			<div id="page-2" class="page" onclick="rotate2()">
+				<div class="side side-1">
+					<h3>LG 1.1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue.</p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-2">
+					<h3>LG 1.2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue. </p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+			</div>
+			<div id="page-3" class="page" onclick="rotate3()">
+				<div class="side side-3">
+					<h3>LG 1.3 PART 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue. </p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-4">
+					<h3>Live Discussion</h3>
+					<iframe class="vids" src="https://drive.google.com/file/d/1vWVzf8BScFFr73-SBlPwM8u2hdbZPPVL/preview" allow="autoplay"></iframe>
+				</div>
+			</div>
+			<div id="page-4" class="page" onclick="rotate4()">
+				<div class="side side-5">
+					<h3>LG 1.3 PART 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue.</p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-6">
+					<h3>Live Discussion</h3>
+					<iframe class="vids" src="https://drive.google.com/file/d/1Q3rKjtPJBNMXiWnEp9AzebdvcHAtolLK/preview" allow="autoplay"></iframe>
+				</div>
+			</div>
+			<div id="page-5" class="page" onclick="rotate5()">
+				<div class="side side-7">
+					<h3>LG 1.4</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue. </p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-8">
+					<h3>LIVE DISCUSSION</h3>
+					<iframe class="vids" src="https://drive.google.com/file/d/1ZNVJ7Iovfu2S3gosuR_FJOBI4ND30JVL/preview" allow="autoplay"></iframe>
+				</div>
+			</div>
+			<div id="page-6" class="page" onclick="rotate6()">
+				<div class="side side-9">
+					<h3>LG 1.5 PART 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue. </p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-10">
+					<h3>LG 1.5 PART 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue.</p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+			</div>
+			<div id="page-7" class="page" onclick="rotate7()">
+				<div class="side side-11">
+					<h3>LG 1.6 PART 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue.</p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-12">
+					<h3>LG 1.6 PART 2</h3></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue.</p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+			</div>
+			<div id="page-8" class="page" onclick="rotate8()">
+				<div class="side side-13">
+					<h3>LG 1.7</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies sem at nunc pretium vehicula. Nam sit amet lacus vitae eros tempus ultricies. Phasellus ultrices tristique velit eu congue.</p>
+					<a href="#" download>
+					<span>Download</span><span>PDF</span></a>
+				</div>
+				<div class="side side-14">
+
+				</div>
+			</div>
+		</div>
+			<h3>OUTPUTS</h3>
+			<hr style="border-top: 3px dashed #bbb; margin: 10px;">
+		<!--Bottom part-->
+		<div class="outputs">
+			<div class="output-1">
+				<i class='bx bx-notepad'></i>
+				<a href="#"><span class="out-text">FA: ACROSTIC</span></a>
+			</div>
+			<div class="output-2">
+				<i class='bx bx-notepad'></i>
+				<a href="#"><span class="out-text">AA: HEAR ME OUT</span></a>
+			</div>
+		</div>
+		 <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h4><span>PSHS — CLC &ensp;Knowledge Hub</span></h4>
+
+				<p class="footer-links">
+					<a href="dashboard-final.html" class="link-1">Dashboard</a>
+					
+					<a href="#">Site Home</a>
+				
+					<a href="#">Calendar</a>
+				
+					<a href="authorpage.html">Authors</a>
+					
+					<a href="#">To-do-list</a>
+				</p>
+
+				<p class="footer-company-name">Khub Reimagined © 2022</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<p> <a href="https://www.facebook.com/pshsclc" class="icon"><i class= 'fa fa-map-marker'></i></a>Lily Hill Street Clark Freeport Zone</p>
+				</div>
+
+				<div>
+					<p> <a href="https://www.instagram.com/pshs_clc/" class="icon"><i class= 'fa fa-phone'></i></a>(045) 499 0136</p>
+				</div>
+
+				<div>
+					<p> <a href="https://twitter.com/PSHS_CLC" class="icon"><i class= 'fa fa-envelope'></i></a>khub@clc.pshs.edu.ph</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About us</span>
+					We Are A school that stands for truth, sevice and excellence. We are PISAY.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+		
+	</div>
+
+
+<script>
+   	document.getElementById('page-1').onclick = function rotate1() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-2').onclick = function rotate2() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-3').onclick = function rotate3() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-4').onclick = function rotate4() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-5').onclick = function rotate5() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-6').onclick = function rotate6() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-7').onclick = function rotate7() {
+    this.classList.toggle('active');
+}
+	document.getElementById('page-8').onclick = function rotate8() {
+    this.classList.toggle('active');
+}
+
+  let sidenav = document.querySelector(".sidenav");
+  let closeBtn = document.querySelector("#btn");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidenav.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidenav.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  
+  </script>
+</body>
+</html>
